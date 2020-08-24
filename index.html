@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로젝트 서효정</title>
+    <link href='css/styles.css' rel='stylesheet'>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="hero-header">
+        <header>
+                <!-- <ul class='navbar'>
+                    <li class='navlink'><a href='#'>HOME</a></li>
+                    <li class='navlink'><a href='#'>ABOUT</a></li>
+                    <li class='navlink'><a href='#'>MY COURSE</a></li>
+                    <li class='navlink'><a href='#'>ACCOUNT</a></li>
+                    <li class='navlink'><a href='#'>SEOHYOJUNG</a></li>
+                </ul> -->
+                <nav class="animated flipInX">
+                    <ul>
+                      <li class="sub-menu"><a href="#"><img src='images/admin.png' height=39px><i class="fa fa-angle-down"></i></a>
+                        <ul style="line-height: 40%;">
+                          <li> <a href="#"> 내 코스 </a> </li>
+                          <li> <a href="#"> 즐겨찾는 코스 </a> </li>
+                          <li> <a href="#"> 댓글 관리 </a> </li><br>
+                          <li> <a href="#"> 계정 관리 </a> </li>
+                          <li> <a href="#"> 도움말 </a> </li><br>
+                          <li> <a href="#"> 로그아웃 </a> </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </nav>
+        </header>
+        <div class="info">
+          <h1>프로젝트 서효정</h1>
+          <h2>그렇게 해서 오늘 안에 코스는 다 짜겠니? ㅋ</h2>
+          <h3>믿고맡기는코스맛집</h3>
+        </div>
+            <!-- <select onchange="categoryChange(this)">
+            <option>대분류!</option>
+            <option value="a">서울특별시</option>
+            <option value="b">경기도</option>
+            <option value="c">강원도</option>
+            <option value="d">충청북도</option>
+            <option value="e">충청남도</option>
+            <option value="f">전라북도</option>
+            <option value="g">전라남도</option>
+            <option value="h">경상북도</option>
+            <option value="i">경상남도</option>
+        </select>
+        
+        <select id="good">
+        <option>소분류!</option>
+        </select> -->
+        <form>
+            <p><input type="text"
+                name="textfield"
+                style="text-align: left; width:215px; height:34px;"
+                placeholder="어디 가니?"></p>
+                        <select
+                        id = 'days'
+                        style="text-align-last: left; width: 195px;">
+                        <option value="" disabled selected>며칠 가니?</option>
+                            <option value=1>무박1일</option>
+                            <option value=2>1박2일</option>
+                            <option value=3>2박3일</option>
+                            <option value=4>3박4일</option>
+                            <option value=5>그 이상</option>
+                        </select>
+                        <select
+                        id='who'
+                        style="text-align-last: left; width: 195px;">
+                        <option value="" disabled selected>누구랑 가니?</option>
+                            <option value=1>나홀로</option>
+                            <option value=2>부모님</option>
+                            <option value=3>친구</option>
+                            <option value=4>연인</option>
+                        </select>
+
+            <p><input type="submit"
+                style="height: 34px;"
+                value="검색궈궈"></p>
+        </form>
+    </div>
+</body>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+$('.sub-menu ul').hide();
+$(".sub-menu a").click(function () {
+  $(this).parent(".sub-menu").children("ul").slideToggle("200");
+  $(this).find("i.fa").toggleClass("fa-angle-up fa-angle-down");
+});
+</script>
+</html>
