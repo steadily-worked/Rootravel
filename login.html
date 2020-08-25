@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href='css/styles.css' rel='stylesheet'>
+</head>
+<style>
+    body {
+        font-family: 'GmarketSansLight';
+        display: flex;
+        flex-direction: row;
+    }
+    #right-login > p {
+        font-size: 15px;
+        margin-top: 50px;
+    }
+    input[type='email'] {
+        margin: 25px auto 50px auto;
+    }
+</style>
+<body>
+    <div id='left-image'>
+        <img src='images/sky1.jpg'>
+    </div>
+    <div id='right'>
+        <div id='right-title'>
+            <p>Sign In</p>
+        </div>
+        <form id = 'right-login'>
+            <p>User Name or Email</p>
+            <input type='email'
+            placeholder='이메일을 입력하세요.'
+            style='border-right: 0px; border-top: 0px; border-left: 0px;
+            width: 425px; line-height: 18px;
+            font-family: "GmarketSansLight";'>
+            <p>Password</p>
+            <input type='password'
+            placeholder='패스워드를 입력하세요.'
+            style='border-right: 0px; border-top: 0px; border-left: 0px;
+            width: 425px; line-height: 18px;
+            font-family: "GmarketSansLight";'>
+            <input type='checkbox' id='check'>
+            <label for="check">Remember Me</label>
+            <h3><a href='#'>Forgot Password?</a></h3>
+            <input type='submit'
+            value='Sign In'
+            style='font-family: "GmarketSansLight"; font-size: 17px;'
+            id='submit-login'>
+            <h4>Not a member yet? <a href='signup.html'>Sign Up</a></h4>
+        </form>
+        <div id='grid'>
+        <p><img src="https://steemitimages.com/1280x0/https://i.imgsafe.org/f3/f3caaad7f3.png" width="350" height="12" alt=''></p>
+        <div id='grid1'>
+            <a href='#' id='facebook'>
+                <div id='images'><img src='images/facebook.png' width='15px'></div>
+                Facebook</a>
+            <a href='#' id='twitter'>
+                <div id='images'><img src='images/twitter.png' width='15px'></div>
+                Twitter</a>
+        </div>
+        <div id='grid2'>
+            <a href='#' id='google'>
+                <div id='images'><img src='images/google.png' width='15px'></div>
+                Google</a>
+            <a href='#' id='kakao'>
+                <div id='images'><img src='images/kakao.png' width='20px'></div>
+                Kakao</a>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

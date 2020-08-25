@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    font-family: "GmarketSansMedium";
 }
 @font-face {
     Src: url('../fonts/GmarketSansBold.otf');
@@ -20,21 +19,24 @@
 html, body {
     margin: 0;
     padding: 0;
-}
+    width: 100%;
+    height: 100%;
+    font-family: "GmarketSansMedium";
 
+}
 /* navbar */
 header {
     width: 100%;
     height: 100px;
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-around;
 }
-/* .navbar {
-    display: none;
+.navbar {
+    display: flex;
     justify-content: space-around;
     width: 50%;
-} */
+}
 .navbar > .navlink {
     list-style: none;
     margin: 0px 20px;
@@ -42,122 +44,43 @@ header {
 .navbar > .navlink > a {
     font-family: "GmarketSansLight";
     text-decoration: none;
-    color: white;
-}
-
-/* hero-header */
-.hero-header {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/img2.jpg');
-    -webkit-background-size: cover;
-    -moz-background-size:  cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-position: center center;
-    height: 799px;
-    text-align: center;
-    margin: 0 auto;
-    padding: 0px;
-}
-
-.hero-header .info {
-    color: white;
-    margin: 0 auto;
-    margin-top: 230px;
-}
-
-.info h1 {
-    Font-family: "GmarketSansBold";
-    font-weight: 800;
-    font-size: 85px;
-    margin: 0;
-    margin-bottom: 20px;
-}
-.info h2 {
-    font-family: "GmarketSansLight";
-    margin: 0px 0px 30px 0px;
-    letter-spacing: 2px;
-}
-.info h3 {
-    font-size: 15px;
-    letter-spacing: 2px;
-    font-family: "GmarketSansMedium";
-    font-weight: 400;
-    display: inline;
-    margin: 0;
-    border: 1px solid white;
-    padding: 8px 40px;
-    color: white;
-}
-
-select {
-    border-radius: 5px;
-    display: inline;
-    margin-left: 10px;
-    margin-right: 10px;
-    border: 0;
-    padding: 8px 40px;
-}
-
-form {
-    margin-top: 45px;
-    display: inline-block;
-}
-form > p {
-    display: inline;
-}
-input[type="text"] {
-    border-radius: 5px;
-    border: 0;
-    padding: 10px 40px;
-    margin-right: 10px;
-}
-input[type="date"] {
-    border-radius: 5px;
-    border: 0;
-    padding: 8px 40px;
-    margin-right: 10px;
-}
-
-input[type="submit"] {
-    border-radius: 5px;
-    outline: none;
-    background-color: skyblue;
-    color: white;
-    margin-left: 10px;
-    border: 0;
-    padding: 10px 40px;
+    color: transparent;
 }
 nav {
     text-align: center;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
+    margin-left: 200px;
 }
 
 nav ul {
     text-align: center;
     background: none;
     list-style: none;
-    margin: 0;
+    margin: 0px 40px;
     padding: 0;
   }
   
-  nav ul li {
+nav ul li {
     position: relative;
     display: inline-block;
     margin-right: -4px;
     text-align: center;
-  }
+}
   
-  nav ul li:first-child a {
+nav ul li:first-child a {
     background: none;
     padding: 15px 100%;
-  }
-  nav ul li:first-child a img {
+}
+nav ul li:first-child a img {
     color: white;
-  }
-  nav ul li:last-child { margin: 0; }
+    margin-left: 20px;
+}
+nav ul li:last-child {
+    margin: 0; 
+}
   
-  nav ul li a {
+nav ul li a {
     display: block;
     background: none;
     padding: 15px 20px;
@@ -196,3 +119,269 @@ nav ul {
     padding: 10px 15px;
     font-size: 14px;
   }
+
+/* hero-header */
+.hero-header {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/img2.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size:  cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.hero-header .info {
+    color: white;
+    margin: 0 auto;
+    margin-top: 180px;
+}
+
+.info h1 {
+    Font-family: "GmarketSansBold";
+    font-weight: 800;
+    font-size: 85px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.info h2 {
+    font-family: "GmarketSansLight";
+    margin: 0px 0px 30px 0px;
+    letter-spacing: 2px;
+}
+.info h3 {
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-family: "GmarketSansMedium";
+    font-weight: 400;
+    display: inline;
+    margin: 0;
+    border: 1px solid white;
+    padding: 8px 40px;
+    color: white;
+}
+
+select {
+    border-radius: 5px;
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 0;
+    padding: 8px 40px;
+}
+
+#form {
+    margin-top: 45px;
+    display: inline-block;
+}
+#form > p {
+    display: inline;
+}
+#home {
+    border-radius: 5px;
+    border: 0;
+    padding: 10px 40px;
+    margin-right: 10px;
+}
+input[type="date"] {
+    border-radius: 5px;
+    border: 0;
+    padding: 8px 40px;
+    margin-right: 10px;
+}
+
+#submit-home {
+    border-radius: 5px;
+    outline: none;
+    background-color: skyblue;
+    color: white;
+    margin-left: 10px;
+    border: 0;
+    padding: 10px 40px;
+}
+
+
+/* login */
+#left-image {
+    display: inline-flex;
+    width: 50%;
+    height: 100%;
+}
+#left-image img {
+    width: 100%;
+    background-size: cover;
+    background-position: center top;
+}
+
+#right {
+    width: 50%;
+}
+
+#right-title {
+    margin: 0px 0px 0px 25px;
+    font-size: 35px;
+    color: gray;
+}
+#right-title > p {
+    margin: 20px 0px 0px 0px;
+    font-family: "GmarketSansMedium";
+}
+#right-login > p {
+    font-size: 10px;
+    margin-left: 150px;
+    margin-top: 38px;
+}
+input:focus {
+    outline: none;
+}
+
+input[type='email'], input[type='password'], #text-signup, #text-signup-number {
+    display: block;
+    margin: 15px auto 25px auto;
+    font-size: 14px;
+    width: 150px;
+    padding: 0px 0px 12px 10px;
+}
+
+input[type='checkbox'] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip:rect(0,0,0,0);
+    border: 0;
+}
+input[type='checkbox'] + label {
+    margin-left: 147.5px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+input[type='checkbox'] + label:before {
+    content: ' ';
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    line-height: 21px;
+    margin: -2px 8px 0 0;
+    text-align: center;
+    vertical-align: middle;
+    background: #fafafa;
+    border: 1px solid #cacece;
+    border-radius : 4px;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+}
+input[type="checkbox"] + label:active:before,
+input[type="checkbox"]:checked + label:active:before {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+input[type="checkbox"]:checked + label:before {
+    content: url('../images/checkbox.png');
+    color: #99a1a7;
+    text-shadow: 1px 1px #fff;
+    border-color: #adb8c0;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+  }
+
+#right-login > h3 {
+    display: inline;
+    font-size: 15px;
+    margin-left: 115px;
+}
+#right-login > h3 > a {
+    text-decoration: none;
+    color: black;
+}
+#submit-login {
+    display: block;
+    margin: 50px auto 0px auto;
+    width: 425px;
+    border-radius: 5px;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid skyblue;
+    padding: 20px 40px;
+}
+#right-login > h4 {
+    font-size: 15px;
+    text-align: center;
+    margin: 40px 0 60px 0;
+}
+#right-login > h4 > a {
+    color: black;
+}
+#grid > p {
+    text-align: center;
+}
+#grid1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin: 0px 0px 20px 0px;
+}
+#grid2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+#grid1 > a, #grid2 > a {
+    color: white;
+    text-decoration: none;    
+}
+
+#facebook {
+    display: flex;
+    width: 20%;
+    max-height: 32px;
+    overflow: hidden;
+    margin-right: 10px;
+    background-color: #3b5998;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+}
+#twitter {
+    display: flex;
+    width: 20%;
+    max-height: 32px;
+    padding: 8px 10px;
+    background-color: #00acee;
+    border: none;
+    border-radius: 5px;
+}
+#google {
+    display: flex;
+    width: 20%;
+    max-height: 32px;
+    margin: 0px 10px 20px 0px;
+    padding: 8px 10px;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+}
+#kakao {
+    display: flex;
+    width: 20%;
+    max-height: 32px;
+    padding: 8px 10px;
+    background-color: #f7e600;
+    border: none;
+    border-radius: 5px;
+}
+#kakao > #images {
+    margin-left: -4px;
+}
+#images {
+    padding-right: 7px;
+}
