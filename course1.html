@@ -12,22 +12,6 @@
         display: flex;
         flex-direction: row;
     }
-    #right-title > p {
-        display: inline-block;
-        font-size: 25px;
-        font-weight: bold;
-    }
-    #right-title > h5 {
-        letter-spacing: 3px;
-        font-size: 15px;
-        display: inline-block;
-        margin: 0;
-        padding: 0;
-    }
-    #right-title {
-        margin: 20px 0px 0px 50px;
-        height: 10%;
-    }
 </style>
 <body>
     <div id='left-image-course'>
@@ -35,11 +19,31 @@
         id = 'left-image-course1'>
     </div>
     <div id='right-container'>
-        <div id='right-title'>
+        <div id='right-title-course1'>
         <p>코스</p><h5>(421개)</h5>
-        <!-- 반투명 창을 여는 버튼 -->
-        <button id="optionBtn">옵션 추가</button>
+        <ul id='right-title-course1-ul'>
+            <li><button id="optionBtn"
+                style='font-family: "GmarketSansLight";'>옵션 추가</button></li>
+            <li><select 
+                style="font-family: 'GmarketSansLight';"
+                id='right-select'>
+                <option value="" disabled selected>Sort</option>
+            </select></li>
+            <li><input type="text"
+            autocomplete="off"
+            class="form-control"
+            placeholder="Post A Review"
+            id="text_task"
+            style='outline: none; border: none; width: 140px;
+                margin-block-start: 1.67em; line-height: 17px;
+                margin-left: 30px; font-family: "GmarketSansLight";'>
+            </li>
+            <li><button
+            style='padding-bottom: 2px;'
+            type="submit" id="btn_add_task" class="btn btn-primary">Add</button></li>
+        </ul>
         </div>
+        <!-- 반투명 창을 여는 버튼 -->
         <!-- 새로 뜨는 창-->
         <div id="myOption" class="option">
         <!-- 반투명 창 내에 있는 내용들 -->
@@ -51,14 +55,61 @@
             <span class="close">&times;</span>                                                               
             <p>옵션 디자인 작업 부탁드립니다 ^^</p>
         </div>
-    
+        </div>
+        <div id='line'>
+            <p><img src="https://steemitimages.com/1280x0/https://i.imgsafe.org/f3/f3cac95a92.png" width="880" height="12" alt=''></p>
         </div>
         <div id='right-contents'>
-            
+            <ul id='list_tasks'></div>
         </div>
     </div>
 </body>
 <script>
+        // 해시 태그 부분 //
+        var elements = document.getElementById('element');
+        var taskSubmit = document.getElementById('btn_add_task');
+        var taskBox = document.getElementById('text_task');
+        var taskList = document.getElementById('list_tasks');
+
+        document.addEventListener('click', function(e) {
+            e.preventDefault();
+            var task = taskBox.value.trim();
+            var newLI = document.createElement('li');
+            newLI.innerText = '#';
+            var removeBtn = document.createElement('button');
+            var element = newLI.appendChild(document.createTextNode(task));
+
+            if (taskBox.value != "")  {
+                taskList.appendChild(newLI);
+                taskList.appendChild(removeBtn);
+                removeBtn.addEventListener('click', function() {
+                removeBtn.parentNode.removeChild(removeBtn);
+                newLI.parentNode.removeChild(newLI);
+            });
+            }
+            taskBox.value = '';
+        }, false);
+
+        document.addEventListener('keydown', function(e) {
+        var task = taskBox.value.trim();
+        var newLI = document.createElement('li');
+        newLI.innerText = '#';
+        var removeBtn = document.createElement('button');
+        var element = newLI.appendChild(document.createTextNode(task));
+        if ((taskBox.value != "") && (e.keyCode === 188 || e.keyCode === 13 || e.keyCode === 32))  {
+            e.preventDefault();
+            taskList.appendChild(newLI);
+            taskList.appendChild(removeBtn);
+            taskBox.value = '';
+            removeBtn.addEventListener('click', function() {
+                removeBtn.parentNode.removeChild(removeBtn);
+                newLI.parentNode.removeChild(newLI);
+            });
+        }
+    }, false);
+
+        // 반투명 옵션 선택 부분 //
+
         // 전체 윈도우를 가져옴
         var right = document.getElementById('right-container');
         var left = document.getElementById('left-image-course1');

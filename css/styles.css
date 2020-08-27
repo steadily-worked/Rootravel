@@ -22,7 +22,6 @@ html, body {
     width: 100%;
     height: 100%;
     font-family: "GmarketSansMedium";
-
 }
 /* navbar */
 header {
@@ -164,7 +163,7 @@ nav ul li a {
     color: white;
 }
 
-select {
+#days, #who {
     border-radius: 5px;
     display: inline;
     margin-left: 10px;
@@ -172,7 +171,6 @@ select {
     border: 0;
     padding: 8px 40px;
 }
-
 #form {
     margin-top: 45px;
     display: inline-block;
@@ -220,12 +218,12 @@ input[type="date"] {
     width: 50%;
 }
 
-#right-title {
+#right-title, {
     margin: 0px 0px 0px 25px;
     font-size: 35px;
     color: gray;
 }
-#right-title > p {
+#right-title > p{
     margin: 20px 0px 0px 0px;
     font-family: "GmarketSansMedium";
 }
@@ -406,26 +404,27 @@ input[type="checkbox"]:checked + label:before {
     width: 70%;
 }
 #optionBtn {
-    float: right;
+    position: relative;
+    top: 50%;
     border: none;
+    padding: 5px 5px;
     background-color: rgba(0,0,0,0);
-    color: black;;
-    padding: 5px;
+    color: black;
 }
 #optionBtn:focus {
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.1);
     outline: none;
 }
 .option {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    left: 450px;
-    top: 100px;
-    width: 60%; /* Full width */
+    left: 480px;
+    top: 110px;
+    width: 61%; /* Full width */
     height: 80%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgb(0,0,1); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
@@ -455,4 +454,77 @@ input[type="checkbox"]:checked + label:before {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+#right-title-course1 > p {
+    font-family: 'GmarketSansMedium';
+    font-weight: 900;
+    display: inline-block;
+    font-size: 25px;
+}
+#right-title-course1 > h5 {
+    letter-spacing: 3px;
+    font-size: 15px;
+    display: inline-block;
+    padding: 0;
+}
+#right-title-course1 {
+    margin: 20px 0px 0px 50px;
+    height: 7%;
+}
+
+#right-title-course1-ul {
+    margin-right: 80px;
+    float: right;
+    list-style: none;
+    margin-bottom: 0px;
+}
+#right-title-course1-ul li:first-child, li:last-child {
+    padding-top: 17.5px;
+}
+#right-title-course1-ul > li {
+    float: left;
+}
+
+#right-select {
+    outline: none;
+    padding-right: 20px;
+    margin-left: 20px;
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+    border: 0;
+}
+#line {
+    text-align: left;
+    margin-left: 50px;
+}
+#line > p {
+    margin: 0;
+}
+
+/* hashtag */
+#list_tasks {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+#list_tasks > li:first-child {
+    margin-left: 50px;
+}
+#list_tasks > li {
+    margin-left: 10px;
+    list-style: none;
+    border: 1px solid skyblue;
+    padding: 8px 10px;
+    border-radius: 1px;
+    float: right;
+}
+#list_tasks > button {
+    width: 30px;
+    color: transparent;
+    margin-left: 5px;
+    border: 0;
+    background-image: url('../images/x.png');
+    background-repeat: no-repeat;
 }
