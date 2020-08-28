@@ -59,8 +59,17 @@
         <div id='line'>
             <p><img src="https://steemitimages.com/1280x0/https://i.imgsafe.org/f3/f3cac95a92.png" width="880" height="12" alt=''></p>
         </div>
+        <div id='hashtag'>
+            <ul id='list_tasks'></ul>
+        </div>
         <div id='right-contents'>
-            <ul id='list_tasks'></div>
+            <div id='right-contents-left'>
+                <img src='images/img1.jpg'>
+            </div>
+            <div id='line2'>
+                <p><img src="https://steemitimages.com/1280x0/https://i.imgsafe.org/f3/f3cac95a92.png" width="150" height="12" alt=''></p>
+            </div>
+        </div>
         </div>
     </div>
 </body>
@@ -83,8 +92,8 @@
                 taskList.appendChild(newLI);
                 taskList.appendChild(removeBtn);
                 removeBtn.addEventListener('click', function() {
-                removeBtn.parentNode.removeChild(removeBtn);
-                newLI.parentNode.removeChild(newLI);
+                    removeBtn.parentNode.removeChild(removeBtn);
+                    newLI.parentNode.removeChild(newLI);
             });
             }
             taskBox.value = '';

@@ -425,7 +425,7 @@ input[type="checkbox"]:checked + label:before {
     height: 80%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,1); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: rgba(0,0,0,0.2); /* Black w/ opacity */
 }
 
 .option-content1 {
@@ -514,6 +514,7 @@ input[type="checkbox"]:checked + label:before {
 }
 #list_tasks > li {
     margin-left: 10px;
+    font-size: 10px;
     list-style: none;
     border: 1px solid skyblue;
     padding: 8px 10px;
@@ -521,10 +522,31 @@ input[type="checkbox"]:checked + label:before {
     float: right;
 }
 #list_tasks > button {
-    width: 30px;
-    color: transparent;
-    margin-left: 5px;
+    width: 20px;
+    height: 20px;
+    margin: auto 0 auto 5px;
     border: 0;
     background-image: url('../images/x.png');
+    background-color: transparent;
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#right-contents-left {
+    width: 25%;
+    margin-left: 50px;
+}
+#right-contents-left img {
+    background-size: cover;
+    width: 100%;
+}
+
+#line2 {
+    transform: rotate(90deg);
+    display: inline-block;
+}
+
+#line2 > p {
+    margin: 0;
 }
