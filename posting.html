@@ -49,6 +49,9 @@
       margin-left: auto;
       margin-right: auto;
     }
+    .swiper-pagination {
+        margin-bottom: 120px;
+    }
     .swiper-slide {
       text-align: center;
       font-size: 18px;
@@ -86,13 +89,16 @@
     <!-- Add Arrows -->
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
+    <div id='add-swiper-button'><button>add</button></div>
   </div>
+
 </div>
   <!-- Swiper JS -->
   <script src="../package/swiper-bundle.min.js"></script>
 
   <!-- Initialize Swiper -->
   <script>
+    var appendNumber = 4;
     var swiper = new Swiper('.swiper-container', {
       slidesPerView: 1,
       spaceBetween: 30,
@@ -105,6 +111,11 @@
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
+    });
+
+    document.querySelector('#add-swiper-button').addEventListener('click', function (e) {
+      e.preventDefault();
+      swiper.appendSlide('<div class="swiper-slide">Slide ' + (++appendNumber) + '</div>');
     });
   </script>
 </body>
