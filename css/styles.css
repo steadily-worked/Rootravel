@@ -388,6 +388,8 @@ input[type="checkbox"]:checked + label:before {
 /* course1 */
 
 #left-image-course {
+    position: fixed;
+    overflow: auto;
     display: inline-flex;
     width: 30%;
     height: 100%;
@@ -397,10 +399,11 @@ input[type="checkbox"]:checked + label:before {
     width: 100%;
     background-size: cover;
     background-position: center top;
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 #right-container {
+    margin-left: 30%;
     width: 70%;
 }
 #optionBtn {
@@ -532,21 +535,77 @@ input[type="checkbox"]:checked + label:before {
     background-size: cover;
     background-position: center center;
 }
-
-#right-contents-left {
-    width: 25%;
+#right-contents {
+    height: 18%;
+    width: 87.5%;
     margin-left: 50px;
+    border: 1px solid gray;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 30px;
+}
+#right-contents-left {
+    padding-top: 20px;
+    text-align: center;
+    width: 35%;
+    height: 75%;
+    float: left;
+    border: 1px solid gray;
+    padding-right: 20px;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
 }
 #right-contents-left img {
+    float: left;
     background-size: cover;
-    width: 100%;
-}
-
-#line2 {
-    transform: rotate(90deg);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-position: 50%;
     display: inline-block;
+    vertical-align: middle;
 }
-
-#line2 > p {
+#right-contents-left > p, #right-contents-right > p {
+    text-align: left;
+    font-size: 14px;
+    padding-left: 20px;
     margin: 0;
+    display: inline-block;
+    line-height: 170%;
+    vertical-align: middle;
+}
+#right-contents-left > p, #right-contents-left > h2 {
+    float: left;
+}
+#right-contents-left > h2 {
+    font-size: 14px;
+    display: inline-block;
+    margin: 0;
+    padding-left: 20px;
+}
+#right-contents-right {
+    width: 65%;
+    float: left;
+}
+#star {
+    float: left;
+    text-align: left;
+}
+#star > p {
+    margin: 0;
+    padding-left: 20px;
+}
+#right-contents-right > p {
+    margin-top: 10px;
+    font-size: 12px;
+
+}
+#right-contents-right > h3 {
+    font-size: 12px;
+}
+#right-contents-right > button {
+    float: right;
+    margin-right: 30px;
 }
