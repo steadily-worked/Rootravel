@@ -339,17 +339,11 @@ input[type="checkbox"]:checked + label:before {
 }
 
 #facebook {
-    display: flex;
-    width: 20%;
-    max-height: 32px;
     overflow: hidden;
     margin-right: 10px;
     background-color: #3b5998;
-    padding: 8px 10px;
-    border: none;
-    border-radius: 5px;
 }
-#twitter {
+#twitter, #google, #kakao, #facebok {
     display: flex;
     width: 20%;
     max-height: 32px;
@@ -359,23 +353,11 @@ input[type="checkbox"]:checked + label:before {
     border-radius: 5px;
 }
 #google {
-    display: flex;
-    width: 20%;
-    max-height: 32px;
     margin: 0px 10px 20px 0px;
-    padding: 8px 10px;
     background-color: green;
-    border: none;
-    border-radius: 5px;
 }
 #kakao {
-    display: flex;
-    width: 20%;
-    max-height: 32px;
-    padding: 8px 10px;
     background-color: #f7e600;
-    border: none;
-    border-radius: 5px;
 }
 #kakao > #images {
     margin-left: -4px;
@@ -609,4 +591,48 @@ input[type="checkbox"]:checked + label:before {
 #right-contents-right > button {
     float: right;
     margin-right: 30px;
+}
+#right-contents-right > button > a {
+    text-decoration: none;
+    color: black;
+}
+
+/* course2 */
+#center-container {
+    margin-left: 30%;
+    width: 30%;
+    height: 100%;
+    background-color: pink;
+}
+#center-1 {
+    padding-top: 60px;
+    height: 125px;
+    background-clip: content-box;
+    text-decoration: none;
+    color: black;
+}
+#center-2, #center-3, #center-4, #center-5, #center-6, #center-7 {
+    height: 100px;
+    padding-left: 40px;
+    text-decoration: none;
+    color: black;
+}
+#center-1-1 {
+    font-size: 11px;
+    height: 35px;
+    background-color: white;
+    position: relative;
+}
+#right-container-course2 {
+    width: 40%;
+    height: 100%;
+}
+#center-1 > p {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 40px;
+}
+#center-1-1 > p {
+    margin-left: 40px;
+    padding-top: 2.5px;
 }

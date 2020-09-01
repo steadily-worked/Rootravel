@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='css/styles.css' rel='stylesheet'>
+    <title>Course-Detail</title>
+</head>
+<style>
+    body {
+        font-family: 'GmarketSansLight';
+        display: flex;
+        flex-direction: row;
+    }
+    p {
+        margin: 0;
+        padding: 0;
+    }
+    #center-1:after, #center-1-1:after {
+        content: "";
+        display: block;
+        width: 350px;
+        border-bottom: 1px solid #bcbcbc;
+        margin: 20px auto;
+    }
+    #grid1-a, #grid1-b, #grid1-c, #grid2-a, #grid2-b, #grid2-c {
+        display: table-cell;
+        width: 20%;
+        max-height: 32px;
+        padding: 8px 10px;
+        border: 1px solid red;
+        border-radius: 10px;
+        margin-right: 5px;
+        margin-left: 5px;
+        font-size: 12px;
+        text-align: center;
+        position: relative;
+    }
+    #grid1 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    #center-1 {
+        background-color: white;
+    }
+</style>
+<body>
+    <div id='left-image-course'>
+        <img src='images/tower3.jpg'
+        id = 'left-image-course1'>
+    </div>
+    <div id='center-container'>
+        <a href='#' id='center-1'>
+            <p>#혼자_다녀온_겨울_제주</p>
+        </a>
+        <div id='center-1-1'>
+            <p>DETAIL COURSE</p>
+        </div>
+        <a href='course2-2.html' id='center-2'>
+            <p>Saturday</p> <h3>February 20th</h3>
+        </a>
+        <a href='course2-3.html' id='center-3'>
+            <p>Sunday</p> <h3>February 21st</h3>
+        </a>
+        <div id='center-4'>
+            <p>MORE DETAIL</p>
+        </div>
+        <a href='course2-4.html' id='center-5'>
+            <p>Friday</p> <h3>February 19th</h3>
+        </a>
+        <a href='course2-5.html' id='center-6'>
+            <p>Thursday</p> <h3>February 18th</h3>
+        </a>
+        <a href='course2-6.html' id='center-7'>
+            <p>Wednesady</p> <h3>February 17th</h3>
+        </a>
+    </div>
+    <div id='right-container-course2'>
+        <div id='grid-course2'>
+            <div id='grid1'>
+                <div id='grid1-a'><p>#뚜벅이</p></div>
+                <div id='grid1-b'>#욜로</div>
+                <div id='grid1-c'>#오션뷰숙소</div>
+            </div>
+            <div id='grid2'>
+                <div id='grid2-a'>#갬성카페족</div>
+                <div id='grid2-b'>#휴식형</div>
+                <div id='grid2-c'>#현지인맛집</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
