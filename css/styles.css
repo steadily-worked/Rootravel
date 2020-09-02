@@ -620,14 +620,13 @@ input[type="checkbox"]:checked + label:before {
 #center-1-1 {
     font-size: 11px;
     height: 35px;
-    background-color: white;
     position: relative;
 }
 #right-container-course2 {
     width: 40%;
     height: 100%;
 }
-#center-1 > p {
+#center-1 > a > p {
     font-size: 20px;
     margin-top: 15px;
     margin-left: 40px;
