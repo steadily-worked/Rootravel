@@ -617,6 +617,9 @@ input[type="checkbox"]:checked + label:before {
     text-decoration: none;
     color: black;
 }
+#center-4 {
+    height: 50px;
+}
 #center-1-1 {
     font-size: 11px;
     height: 35px;
