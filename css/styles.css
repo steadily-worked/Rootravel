@@ -218,10 +218,10 @@ input[type="date"] {
     width: 50%;
 }
 
-#right-title, {
+#right-title {
     margin: 0px 0px 0px 25px;
     font-size: 35px;
-    color: gray;
+    color: #bcbcbc;
 }
 #right-title > p{
     margin: 20px 0px 0px 0px;
@@ -339,11 +339,17 @@ input[type="checkbox"]:checked + label:before {
 }
 
 #facebook {
+    display: flex;
+    width: 20%;
+    max-height: 32px;
     overflow: hidden;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
     margin-right: 10px;
     background-color: #3b5998;
 }
-#twitter, #google, #kakao, #facebok {
+#twitter, #google, #kakao {
     display: flex;
     width: 20%;
     max-height: 32px;
@@ -521,7 +527,7 @@ input[type="checkbox"]:checked + label:before {
     height: 18%;
     width: 87.5%;
     margin-left: 50px;
-    border: 1px solid gray;
+    border: 1px solid #bcbcbc;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -534,7 +540,7 @@ input[type="checkbox"]:checked + label:before {
     width: 35%;
     height: 75%;
     float: left;
-    border: 1px solid gray;
+    border: 1px solid #bcbcbc;
     padding-right: 20px;
     border-top: none;
     border-bottom: none;
@@ -602,7 +608,7 @@ input[type="checkbox"]:checked + label:before {
     margin-left: 30%;
     width: 30%;
     height: 100%;
-    background-color: pink;
+    background-color: #F7ECEB;
 }
 #center-1 {
     padding-top: 60px;
