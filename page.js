@@ -1,6 +1,12 @@
-$(document).ready(function() {
-    $(document).on('click', '#center-1 a', function(event) {
-        history.pushState(null, null, event.target.href);
-        $('#right-container-course2').load(location.href+' #right-container-course2>')
+$(function() {
+    $('#center-2').click(function() {
+        $.ajax({
+            type: "GET",
+            url: "/course2-2.html",
+            dataType : "html",
+            success: function(data) {
+                $('#center-2').html(data);
+            }
+        });
     })
 })
